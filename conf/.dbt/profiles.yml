@@ -1,0 +1,14 @@
+default:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: mythical-range-427208-j6        # Replace with your GCP project ID
+      dataset: dbt_chicago_taxi_trips # Name of the dataset you will use for dbt models
+      keyfile: /root/.dbt/gbq_creds.json # Path to your service account key file
+      threads: 1
+      timeout_seconds: 300
+      location: US
+      priority: interactive
+      retries: 1

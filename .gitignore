@@ -1,0 +1,6 @@
+
+target/
+dbt_packages/
+logs/
+
+/conf/.dbt/gbq_creds.json
