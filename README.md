@@ -8,10 +8,10 @@ OR
 - dbt run 
 
 #### Information
-1- source_chicago_taxi_trips.sql --> extracting tips from bigquery-public-data.chicago_taxi_trips.taxi_trips the  informations related to each taxi_id
-2- monthly_tips.sql --> using *source_chicago_taxi_trips* model to have tips for each month of the year **2008**
-3- top_3_taxis_april_2018.sql --> using *monthly_tips* model to have the top 3 taxis with the highest tips
-4- tips_change.sql --> for running this for a free tier better to use 
+- source_chicago_taxi_trips.sql --> extracting tips from bigquery-public-data.chicago_taxi_trips.taxi_trips the  informations related to each taxi_id
+- monthly_tips.sql --> using *source_chicago_taxi_trips* model to have tips for each month of the year **2008**
+- top_3_taxis_april_2018.sql --> using *monthly_tips* model to have the top 3 taxis with the highest tips
+- tips_change.sql --> for running this for a free tier better to use 
   ``` materialized='view' ```
   also can use 
   ``` materialized='incremental' ```
