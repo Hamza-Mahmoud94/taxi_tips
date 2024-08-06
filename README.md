@@ -20,7 +20,8 @@ the model is showing the difference in tips between the three taxis which has th
 #### Instructions
 - Add your service account credentials to this json file conf\.dbt\gbd_creds.json
 - open terminal and write **dbt run --full-refresh** for **materialized='view'** in the tips_change model **OR**  open terminal and write **dbt run** for **materialized='incremental'**
-- 
+
+   
 ### Resources:
 - Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
 - Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
